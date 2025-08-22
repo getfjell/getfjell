@@ -1,60 +1,60 @@
 [submodule "providers"]
 	path = providers
 	url = git@github.com:getfjell/providers.git
-	branch = main
+	branch = working
 [submodule "lib-sequelize"]
 	path = lib-sequelize
 	url = git@github.com:getfjell/lib-sequelize.git
-	branch = main
+	branch = working
 [submodule "lib-firestore"]
 	path = lib-firestore
 	url = git@github.com:getfjell/lib-firestore.git
-	branch = main
+	branch = working
 [submodule "express-router"]
 	path = express-router
 	url = git@github.com:getfjell/express-router.git
-	branch = main
+	branch = working
 [submodule "lib"]
 	path = lib
 	url = git@github.com:getfjell/lib.git
-	branch = main
+	branch = working
 [submodule "docs-template"]
 	path = docs-template
 	url = git@github.com:getfjell/docs-template.git
-	branch = main
+	branch = working
 [submodule "cache"]
 	path = cache
 	url = git@github.com:getfjell/cache.git
-	branch = main
+	branch = working
 [submodule "client-api"]
 	path = client-api
 	url = git@github.com:getfjell/client-api.git
-	branch = main
+	branch = working
 [submodule "registry"]
 	path = registry
 	url = git@github.com:getfjell/registry.git
-	branch = main
+	branch = working
 [submodule "http-api"]
 	path = http-api
 	url = git@github.com:getfjell/http-api.git
-	branch = main
+	branch = working
 [submodule "core"]
 	path = core
 	url = git@github.com:getfjell/core.git
-	branch = main
+	branch = working
 [submodule "logging"]
 	path = logging
 	url = git@github.com:getfjell/logging.git
-	branch = main
+	branch = working
 [submodule "eslint-config"]
 	path = eslint-config
 	url = git@github.com:getfjell/eslint-config.git
-	branch = main
+	branch = working
 [submodule "sample-app"]
 	path = sample-app
 	url = git@github.com:getfjell/sample-app.git
-	branch = main
+	branch = working
 [submodule "migration"]
 	path = migration
 	url = git@github.com:getfjell/migration.git
-	branch = main
+	branch = working
