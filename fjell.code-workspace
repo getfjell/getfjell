@@ -1,0 +1,46 @@
+{
+	"folders": [
+		{
+			"path": "cache"
+		},
+		{
+			"path": "client-api"
+		},
+		{
+			"path": "core"
+		},
+		{
+			"path": "docs-template"
+		},
+		{
+			"path": "eslint-config"
+		},
+		{
+			"path": "express-router"
+		},
+		{
+			"path": "http-api"
+		},
+		{
+			"path": "lib"
+		},
+		{
+			"path": "lib-firestore"
+		},
+		{
+			"path": "lib-sequelize"
+		},
+		{
+			"path": "logging"
+		},
+		{
+			"path": "providers"
+		},
+		{
+			"path": "registry"
+		},
+		{
+			"path": "sample-app"
+		}
+	]
+}
