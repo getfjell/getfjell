@@ -1,0 +1,45 @@
+[submodule "providers"]
+	path = providers
+	url = git@github.com:getfjell/providers.git
+[submodule "lib-sequelize"]
+	path = lib-sequelize
+	url = git@github.com:getfjell/lib-sequelize.git
+[submodule "lib-firestore"]
+	path = lib-firestore
+	url = git@github.com:getfjell/lib-firestore.git
+[submodule "express-router"]
+	path = express-router
+	url = git@github.com:getfjell/express-router.git
+[submodule "lib"]
+	path = lib
+	url = git@github.com:getfjell/lib.git
+[submodule "docs-template"]
+	path = docs-template
+	url = git@github.com:getfjell/docs-template.git
+[submodule "cache"]
+	path = cache
+	url = git@github.com:getfjell/cache.git
+[submodule "client-api"]
+	path = client-api
+	url = git@github.com:getfjell/client-api.git
+[submodule "registry"]
+	path = registry
+	url = git@github.com:getfjell/registry.git
+[submodule "http-api"]
+	path = http-api
+	url = git@github.com:getfjell/http-api.git
+[submodule "core"]
+	path = core
+	url = git@github.com:getfjell/core.git
+[submodule "logging"]
+	path = logging
+	url = git@github.com:getfjell/logging.git
+[submodule "eslint-config"]
+	path = eslint-config
+	url = git@github.com:getfjell/eslint-config.git
+[submodule "sample-app"]
+	path = sample-app
+	url = git@github.com:getfjell/sample-app.git
+[submodule "migration"]
+	path = migration
+	url = git@github.com:getfjell/migration.git
