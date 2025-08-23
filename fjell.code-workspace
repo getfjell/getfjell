@@ -1,45 +1,59 @@
 {
 	"folders": [
 		{
+			"name": "cache",
 			"path": "cache"
 		},
 		{
+			"name": "client-api",
 			"path": "client-api"
 		},
 		{
+			"name": "core",
 			"path": "core"
 		},
 		{
+			"name": "docs-template",
 			"path": "docs-template"
 		},
 		{
+			"name": "eslint-config",
 			"path": "eslint-config"
 		},
 		{
+			"name": "express-router",
 			"path": "express-router"
 		},
 		{
+			"name": "http-api",
 			"path": "http-api"
 		},
 		{
+			"name": "lib",
 			"path": "lib"
 		},
 		{
+			"name": "lib-firestore",
 			"path": "lib-firestore"
 		},
 		{
+			"name": "lib-sequelize",
 			"path": "lib-sequelize"
 		},
 		{
+			"name": "logging",
 			"path": "logging"
 		},
 		{
+			"name": "providers",
 			"path": "providers"
 		},
 		{
+			"name": "registry",
 			"path": "registry"
 		},
 		{
+			"name": "sample-app",
 			"path": "sample-app"
 		}
 	]
