@@ -1,0 +1,25 @@
+# Monorepo Structure
+
+## Overview
+
+This is a monorepo with multiple interconnected projects. Projects are linked locally, not through npm registry. Each project has its own package.json but they share dependencies through local linking.
+
+## Main Projects
+
+- **api** - Main API server
+- **lib** - Shared library code
+- **core** - Core utilities
+- **providers** - Provider implementations
+- **cache** - Caching layer
+- **client-api** - Client API layer
+
+## Project Dependencies
+
+Projects depend on each other through local linking. When you make changes to a shared library (like `lib` or `core`), dependent projects automatically pick up those changes through the local link.
+
+## Key Principles
+
+- Projects are locally linked, not published to npm
+- Each project has its own build and test pipeline
+- Changes to shared libraries affect all dependent projects
+- Always test downstream effects of library changes

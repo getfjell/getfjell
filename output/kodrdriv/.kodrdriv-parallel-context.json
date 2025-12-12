@@ -1,0 +1,904 @@
+{
+  "version": "1.0.0",
+  "executionId": "d9031a31-3669-476e-a525-80a1ca8417b4",
+  "createdAt": "2025-12-12T07:30:58.925Z",
+  "lastUpdated": "2025-12-12T07:32:08.385Z",
+  "command": "kodrdriv publish --verbose --model \"gpt-5-mini\" --config-dir \".kodrdriv\" --output-dir \"output/kodrdriv\" --preferences-dir \"/Users/tobrien/.kodrdriv\"",
+  "originalConfig": {
+    "dryRun": false,
+    "verbose": true,
+    "debug": false,
+    "overrides": false,
+    "model": "gpt-5-mini",
+    "openaiReasoning": "medium",
+    "openaiMaxOutputTokens": 10000,
+    "contextDirectories": [],
+    "configDirectory": ".kodrdriv",
+    "outputDirectory": "output/kodrdriv",
+    "preferencesDirectory": "/Users/tobrien/.kodrdriv",
+    "discoveredConfigDirs": [
+      "/Users/tobrien/gitw/getfjell/.kodrdriv"
+    ],
+    "resolvedConfigDirs": [
+      "/Users/tobrien/gitw/getfjell/.kodrdriv"
+    ],
+    "commit": {
+      "add": true,
+      "cached": true,
+      "sendit": true,
+      "interactive": false,
+      "amend": false,
+      "messageLimit": 3,
+      "skipFileCheck": false,
+      "maxDiffBytes": 20480,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000,
+      "push": true
+    },
+    "audioCommit": {
+      "maxRecordingTime": 300,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "release": {
+      "from": "main",
+      "to": "HEAD",
+      "messageLimit": 3,
+      "interactive": false,
+      "maxDiffBytes": 20480,
+      "noMilestones": false,
+      "openaiReasoning": "medium",
+      "openaiMaxOutputTokens": 10000
+    },
+    "audioReview": {
+      "includeCommitHistory": true,
+      "includeRecentDiffs": true,
+      "includeReleaseNotes": false,
+      "includeGithubIssues": true,
+      "commitHistoryLimit": 10,
+      "diffHistoryLimit": 5,
+      "releaseNotesLimit": 3,
+      "githubIssuesLimit": 20,
+      "sendit": false,
+      "maxRecordingTime": 300,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "review": {
+      "includeCommitHistory": true,
+      "includeRecentDiffs": true,
+      "includeReleaseNotes": false,
+      "includeGithubIssues": true,
+      "commitHistoryLimit": 10,
+      "diffHistoryLimit": 5,
+      "releaseNotesLimit": 3,
+      "githubIssuesLimit": 20,
+      "sendit": false,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "publish": {
+      "mergeMethod": "merge",
+      "from": "main",
+      "targetVersion": "patch",
+      "interactive": false,
+      "requiredEnvVars": [
+        "GITHUB_TOKEN",
+        "OPENAI_API_KEY"
+      ],
+      "linkWorkspacePackages": true,
+      "unlinkWorkspacePackages": true,
+      "sendit": false,
+      "targetBranch": "main",
+      "noMilestones": false,
+      "checksTimeout": 3600000,
+      "releaseWorkflowsTimeout": 900000,
+      "dependencyUpdatePatterns": [
+        "@fjell/*"
+      ],
+      "waitForReleaseWorkflows": true
+    },
+    "link": {
+      "scopeRoots": {
+        "@fjell": "../../getfjell/"
+      },
+      "dryRun": false,
+      "externals": []
+    },
+    "unlink": {
+      "scopeRoots": {},
+      "dryRun": false,
+      "cleanNodeModules": false,
+      "externals": []
+    },
+    "tree": {
+      "exclude": [
+        "migration",
+        "status"
+      ],
+      "builtInCommand": "publish",
+      "continue": false,
+      "cleanNodeModules": false,
+      "externals": [],
+      "parallel": true,
+      "maxConcurrency": 8
+    },
+    "development": {
+      "targetVersion": "patch",
+      "noMilestones": false
+    },
+    "versions": {},
+    "updates": {},
+    "excludedPatterns": [
+      "node_modules",
+      "package-lock.json",
+      "yarn.lock",
+      "bun.lockb",
+      "composer.lock",
+      "Cargo.lock",
+      "Gemfile.lock",
+      "dist",
+      "build",
+      "out",
+      ".next",
+      ".nuxt",
+      "coverage",
+      ".vscode",
+      ".idea",
+      ".DS_Store",
+      ".git",
+      ".gitignore",
+      "logs",
+      "tmp",
+      ".cache",
+      "*.log",
+      ".env",
+      ".env.*",
+      "*.pem",
+      "*.crt",
+      "*.key",
+      "*.sqlite",
+      "*.db",
+      "*.zip",
+      "*.tar",
+      "*.gz",
+      "*.exe",
+      "*.bin"
+    ],
+    "branches": {
+      "working": {
+        "targetBranch": "main",
+        "developmentBranch": true,
+        "version": {
+          "type": "prerelease",
+          "increment": true,
+          "incrementLevel": "patch",
+          "tag": "dev"
+        }
+      },
+      "main": {
+        "version": {
+          "type": "release"
+        }
+      }
+    }
+  },
+  "dependencyGraph": {
+    "packages": [
+      {
+        "name": "@fjell/cache",
+        "version": "4.7.60-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/cache",
+        "dependencies": [
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/http-api",
+          "@fjell/logging",
+          "@fjell/registry",
+          "fast-safe-stringify",
+          "flatted",
+          "yocto-queue",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/multer",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "@vitest/ui",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "nodemon",
+          "ts-node",
+          "tsc-alias",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/client-api",
+        "version": "4.4.67-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/client-api",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/http-api",
+          "@fjell/logging",
+          "@fjell/registry",
+          "deepmerge",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-istanbul",
+          "@vitest/coverage-v8",
+          "@vitest/ui",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "jsdom",
+          "prismjs",
+          "typescript",
+          "undici",
+          "vitest",
+          "vitest-fetch-mock"
+        ]
+      },
+      {
+        "name": "@fjell/common-config",
+        "version": "1.1.32-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/common-config",
+        "dependencies": [
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "esbuild",
+          "eslint",
+          "typescript"
+        ]
+      },
+      {
+        "name": "@fjell/core",
+        "version": "4.4.72-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/core",
+        "dependencies": [
+          "@fjell/logging",
+          "deepmerge",
+          "luxon",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/luxon",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/docs-template",
+        "version": "1.0.49-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/docs-template",
+        "dependencies": [
+          "react",
+          "react-dom",
+          "react-markdown",
+          "react-syntax-highlighter",
+          "remark-gfm",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@types/react-syntax-highlighter",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitejs/plugin-react",
+          "@vitest/coverage-v8",
+          "esbuild",
+          "eslint",
+          "jsdom",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/express-router",
+        "version": "4.4.77-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/express-router",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "deepmerge",
+          "express",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@tsconfig/recommended",
+          "@types/express",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "esbuild",
+          "eslint",
+          "nodemon",
+          "supertest",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/http-api",
+        "version": "4.4.62-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/http-api",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/logging",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "@vitest/ui",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "jsdom",
+          "typescript",
+          "undici",
+          "vitest",
+          "vitest-fetch-mock"
+        ]
+      },
+      {
+        "name": "@fjell/lib",
+        "version": "4.4.82-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/lib",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/logging",
+          "@fjell/registry",
+          "deepmerge",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/multer",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "nodemon",
+          "ts-node",
+          "tsc-alias",
+          "typescript",
+          "vitest",
+          "zod"
+        ]
+      },
+      {
+        "name": "@fjell/lib-firestore",
+        "version": "4.4.76-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/lib-firestore",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "deepmerge",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "typescript",
+          "vitest",
+          "@google-cloud/firestore"
+        ]
+      },
+      {
+        "name": "@fjell/lib-fs",
+        "version": "4.4.21-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/lib-fs",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@types/uuid",
+          "deepmerge",
+          "uuid",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/lib-gcs",
+        "version": "4.4.32-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/lib-gcs",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@types/uuid",
+          "deepmerge",
+          "uuid",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "typescript",
+          "vitest",
+          "@google-cloud/storage"
+        ]
+      },
+      {
+        "name": "@fjell/lib-sequelize",
+        "version": "4.4.80-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/lib-sequelize",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "dayjs",
+          "deepmerge",
+          "sequelize",
+          "sqlite3",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "@vitest/ui",
+          "esbuild",
+          "eslint",
+          "ts-node",
+          "tsc-alias",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/logging",
+        "version": "4.4.63-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/logging",
+        "dependencies": [
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "ts-node",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/providers",
+        "version": "4.5.86-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/providers",
+        "dependencies": [
+          "@fjell/cache",
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/logging",
+          "react-error-boundary",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@testing-library/dom",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@tsconfig/recommended",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "esbuild",
+          "eslint",
+          "jsdom",
+          "react",
+          "react-dom",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/registry",
+        "version": "4.4.80-dev.0",
+        "path": "/Users/tobrien/gitw/getfjell/registry",
+        "dependencies": [
+          "@fjell/core",
+          "@fjell/logging",
+          "@eslint/eslintrc",
+          "@eslint/js",
+          "@fjell/common-config",
+          "@swc/core",
+          "@tsconfig/recommended",
+          "@types/node",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "esbuild",
+          "eslint",
+          "jsdom",
+          "typescript",
+          "vitest"
+        ]
+      },
+      {
+        "name": "@fjell/sample-app",
+        "version": "0.0.2",
+        "path": "/Users/tobrien/gitw/getfjell/sample-app",
+        "dependencies": [
+          "@fjell/cache",
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/express-router",
+          "@fjell/http-api",
+          "@fjell/lib",
+          "@fjell/lib-sequelize",
+          "@fjell/logging",
+          "@fjell/providers",
+          "@types/express",
+          "@types/supertest",
+          "express",
+          "next",
+          "react",
+          "react-dom",
+          "react-error-boundary",
+          "react-router-dom",
+          "sequelize",
+          "source-map-support",
+          "sqlite3",
+          "supertest",
+          "util",
+          "@eslint/eslintrc",
+          "@fjell/common-config",
+          "@testing-library/jest-dom",
+          "@testing-library/react",
+          "@testing-library/user-event",
+          "@types/node",
+          "@types/react",
+          "@types/react-dom",
+          "@typescript-eslint/eslint-plugin",
+          "@typescript-eslint/parser",
+          "@vitest/coverage-v8",
+          "concurrently",
+          "eslint",
+          "eslint-config-next",
+          "jsdom",
+          "tsx",
+          "typescript",
+          "vitest"
+        ]
+      }
+    ],
+    "edges": [
+      [
+        "@fjell/cache",
+        [
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/http-api",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/client-api",
+        [
+          "@fjell/core",
+          "@fjell/http-api",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/common-config",
+        []
+      ],
+      [
+        "@fjell/core",
+        [
+          "@fjell/logging",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/docs-template",
+        [
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/express-router",
+        [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/http-api",
+        [
+          "@fjell/core",
+          "@fjell/logging",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/lib",
+        [
+          "@fjell/core",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/lib-firestore",
+        [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/lib-fs",
+        [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/lib-gcs",
+        [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/lib-sequelize",
+        [
+          "@fjell/core",
+          "@fjell/lib",
+          "@fjell/logging",
+          "@fjell/registry",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/logging",
+        [
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/providers",
+        [
+          "@fjell/cache",
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/logging",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/registry",
+        [
+          "@fjell/core",
+          "@fjell/logging",
+          "@fjell/common-config"
+        ]
+      ],
+      [
+        "@fjell/sample-app",
+        [
+          "@fjell/cache",
+          "@fjell/client-api",
+          "@fjell/core",
+          "@fjell/express-router",
+          "@fjell/http-api",
+          "@fjell/lib",
+          "@fjell/lib-sequelize",
+          "@fjell/logging",
+          "@fjell/providers",
+          "@fjell/common-config"
+        ]
+      ]
+    ]
+  },
+  "buildOrder": [
+    "@fjell/sample-app",
+    "@fjell/express-router",
+    "@fjell/lib-firestore",
+    "@fjell/lib-fs",
+    "@fjell/providers",
+    "@fjell/common-config",
+    "@fjell/docs-template",
+    "@fjell/logging",
+    "@fjell/core",
+    "@fjell/http-api",
+    "@fjell/registry",
+    "@fjell/client-api",
+    "@fjell/lib",
+    "@fjell/cache",
+    "@fjell/lib-sequelize",
+    "@fjell/lib-gcs"
+  ],
+  "executionMode": "parallel",
+  "maxConcurrency": 8,
+  "state": {
+    "pending": [
+      "@fjell/sample-app"
+    ],
+    "ready": [],
+    "running": [
+      {
+        "name": "@fjell/express-router",
+        "startTime": "2025-12-12T07:31:55.882Z",
+        "elapsedTime": 0
+      },
+      {
+        "name": "@fjell/lib-firestore",
+        "startTime": "2025-12-12T07:31:55.882Z",
+        "elapsedTime": 0
+      },
+      {
+        "name": "@fjell/lib-fs",
+        "startTime": "2025-12-12T07:31:55.882Z",
+        "elapsedTime": 0
+      },
+      {
+        "name": "@fjell/providers",
+        "startTime": "2025-12-12T07:32:05.240Z",
+        "elapsedTime": 0
+      }
+    ],
+    "completed": [
+      "@fjell/common-config",
+      "@fjell/docs-template",
+      "@fjell/logging",
+      "@fjell/core",
+      "@fjell/http-api",
+      "@fjell/registry",
+      "@fjell/client-api",
+      "@fjell/lib",
+      "@fjell/cache",
+      "@fjell/lib-sequelize",
+      "@fjell/lib-gcs"
+    ],
+    "failed": [],
+    "skipped": [],
+    "skippedNoChanges": []
+  },
+  "publishedVersions": [],
+  "retryAttempts": {},
+  "lastRetryTime": {},
+  "packageStartTimes": {
+    "@fjell/common-config": "2025-12-12T07:30:58.925Z",
+    "@fjell/logging": "2025-12-12T07:31:09.115Z",
+    "@fjell/docs-template": "2025-12-12T07:31:09.115Z",
+    "@fjell/core": "2025-12-12T07:31:21.448Z",
+    "@fjell/registry": "2025-12-12T07:31:31.551Z",
+    "@fjell/http-api": "2025-12-12T07:31:31.551Z",
+    "@fjell/lib": "2025-12-12T07:31:43.290Z",
+    "@fjell/client-api": "2025-12-12T07:31:43.290Z",
+    "@fjell/cache": "2025-12-12T07:31:53.821Z",
+    "@fjell/express-router": "2025-12-12T07:31:55.882Z",
+    "@fjell/lib-sequelize": "2025-12-12T07:31:55.882Z",
+    "@fjell/lib-firestore": "2025-12-12T07:31:55.882Z",
+    "@fjell/lib-fs": "2025-12-12T07:31:55.882Z",
+    "@fjell/lib-gcs": "2025-12-12T07:31:55.882Z",
+    "@fjell/providers": "2025-12-12T07:32:05.240Z"
+  },
+  "packageEndTimes": {
+    "@fjell/common-config": "2025-12-12T07:31:09.113Z",
+    "@fjell/docs-template": "2025-12-12T07:31:19.401Z",
+    "@fjell/logging": "2025-12-12T07:31:21.447Z",
+    "@fjell/core": "2025-12-12T07:31:31.550Z",
+    "@fjell/http-api": "2025-12-12T07:31:41.884Z",
+    "@fjell/registry": "2025-12-12T07:31:43.289Z",
+    "@fjell/client-api": "2025-12-12T07:31:53.820Z",
+    "@fjell/lib": "2025-12-12T07:31:55.881Z",
+    "@fjell/cache": "2025-12-12T07:32:05.239Z",
+    "@fjell/lib-sequelize": "2025-12-12T07:32:07.061Z",
+    "@fjell/lib-gcs": "2025-12-12T07:32:08.385Z"
+  },
+  "packageDurations": {
+    "@fjell/common-config": 10188,
+    "@fjell/docs-template": 10286,
+    "@fjell/logging": 12332,
+    "@fjell/core": 10102,
+    "@fjell/http-api": 10333,
+    "@fjell/registry": 11738,
+    "@fjell/client-api": 10530,
+    "@fjell/lib": 12591,
+    "@fjell/cache": 11418,
+    "@fjell/lib-sequelize": 11179,
+    "@fjell/lib-gcs": 12503
+  },
+  "totalStartTime": "2025-12-12T07:30:58.925Z",
+  "recoveryHints": [],
+  "canRecover": true
+}

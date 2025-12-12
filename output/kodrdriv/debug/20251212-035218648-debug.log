@@ -1,0 +1,33 @@
+2025-12-11-195218.657 verbose: Resolved config directory {"service":"kodrdriv"}
+2025-12-11-195218.658 verbose: Hierarchical configuration discovery enabled {"service":"kodrdriv"}
+2025-12-11-195218.658 debug: Using hierarchical discovery: configDirName=.kodrdriv, startingDir=. {"service":"kodrdriv"}
+2025-12-11-195218.658 verbose: Starting hierarchical configuration loading {"service":"kodrdriv"}
+2025-12-11-195218.658 debug: Starting hierarchical discovery from: /Users/tobrien/gitw/getfjell {"service":"kodrdriv"}
+2025-12-11-195218.658 debug: Checking for config directory: /Users/tobrien/gitw/getfjell/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Found config directory at level 0: /Users/tobrien/gitw/getfjell/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Checking for config directory: /Users/tobrien/gitw/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Checking for config directory: /Users/tobrien/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Checking for config directory: /Users/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Checking for config directory: /.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.659 debug: Reached filesystem root, stopping discovery {"service":"kodrdriv"}
+2025-12-11-195218.659 verbose: Discovery complete. Found 1 config directories {"service":"kodrdriv"}
+2025-12-11-195218.659 verbose: Attempting to load config file: /Users/tobrien/gitw/getfjell/.kodrdriv/config.yaml {"service":"kodrdriv"}
+2025-12-11-195218.661 verbose: Successfully loaded config from: /Users/tobrien/gitw/getfjell/.kodrdriv/config.yaml {"service":"kodrdriv"}
+2025-12-11-195218.661 debug: Loaded config from level 0: /Users/tobrien/gitw/getfjell/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.661 verbose: Hierarchical loading complete. Merged 1 configurations {"service":"kodrdriv"}
+2025-12-11-195218.661 verbose: Hierarchical discovery found 1 configuration directories {"service":"kodrdriv"}
+2025-12-11-195218.661 debug:   Level 0: /Users/tobrien/gitw/getfjell/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.661 verbose: Found 1 directories with actual configuration files {"service":"kodrdriv"}
+2025-12-11-195218.661 debug:   Config dir level 0: /Users/tobrien/gitw/getfjell/.kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.662 warn: Directory not readable: ./context {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose: Configuration complete. Effective settings: {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Command: tree {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Model: gpt-5-mini {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Dry run: false {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Debug: true {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Verbose: true {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Config directory: .kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Output directory: output/kodrdriv {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Context directories: none {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Excluded patterns: node_modules, package-lock.json, yarn.lock, bun.lockb, composer.lock, Cargo.lock, Gemfile.lock, dist, build, out, .next, .nuxt, coverage, .vscode, .idea, .DS_Store, .git, .gitignore, logs, tmp, .cache, *.log, .env, .env.*, *.pem, *.crt, *.key, *.sqlite, *.db, *.zip, *.tar, *.gz, *.exe, *.bin {"service":"kodrdriv"}
+2025-12-11-195218.662 verbose:   Link scope roots: @fjell {"service":"kodrdriv"}

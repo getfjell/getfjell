@@ -1,0 +1,49 @@
+# Development Workflow
+
+## Making Cross-Project Changes
+
+When making changes to shared libraries (lib, core, calc, etc.):
+
+1. Make your changes in the appropriate project's `src/` directory
+2. Run `npm run precommit` in that project to test and build
+3. Dependent projects will automatically pick up changes through local linking
+4. Test affected downstream projects to ensure nothing broke
+
+## Testing and Building
+
+### Individual Projects
+
+- Each project has its own test suite accessible via `npm run test`
+- Use `npm run precommit` in individual projects for full build and test pipeline
+- This runs linting, tests, and builds in one command
+
+### Across All Projects
+
+- To verify all projects are working after changes: `kodrdriv tree --cmd "npm run precommit"`
+- This runs the command across all projects in dependency order
+- Use `--start-from <project>` to resume from a specific project after fixing issues
+
+### Integration Tests
+
+- Integration test reference files are the correct expected output
+- **NEVER** overwrite integration test reference files without careful review
+- If integration tests fail, investigate why the output changed
+- Only update reference files if the change is intentional and correct
+
+## Building Individual Projects
+
+Each project can be built independently:
+
+```bash
+cd ~/gitw/getfjell/<project>
+npm run build
+```
+
+The build outputs are consumed by dependent projects through local linking.
+
+## Environment Requirements
+
+- Each project may have its own environment requirements
+- Check project-specific `.env` files or `.env.example` files
+- Some projects require specific environment variables to build or run
+- The workspace root may have a `.env` file for shared configuration

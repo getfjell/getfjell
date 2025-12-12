@@ -1,0 +1,204 @@
+{
+  "command": "kodrdriv publish --verbose --model \"gpt-5-mini\" --config-dir \".kodrdriv\" --output-dir \"output/kodrdriv\" --preferences-dir \"/Users/tobrien/.kodrdriv\"",
+  "originalConfig": {
+    "dryRun": false,
+    "verbose": true,
+    "debug": false,
+    "overrides": false,
+    "model": "gpt-5-mini",
+    "openaiReasoning": "medium",
+    "openaiMaxOutputTokens": 10000,
+    "contextDirectories": [],
+    "configDirectory": ".kodrdriv",
+    "outputDirectory": "output/kodrdriv",
+    "preferencesDirectory": "/Users/tobrien/.kodrdriv",
+    "discoveredConfigDirs": [
+      "/Users/tobrien/gitw/getfjell/.kodrdriv"
+    ],
+    "resolvedConfigDirs": [
+      "/Users/tobrien/gitw/getfjell/.kodrdriv"
+    ],
+    "commit": {
+      "add": true,
+      "cached": true,
+      "sendit": true,
+      "interactive": false,
+      "amend": false,
+      "messageLimit": 3,
+      "skipFileCheck": false,
+      "maxDiffBytes": 20480,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000,
+      "push": true
+    },
+    "audioCommit": {
+      "maxRecordingTime": 300,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "release": {
+      "from": "main",
+      "to": "HEAD",
+      "messageLimit": 3,
+      "interactive": false,
+      "maxDiffBytes": 20480,
+      "noMilestones": false,
+      "openaiReasoning": "medium",
+      "openaiMaxOutputTokens": 10000
+    },
+    "audioReview": {
+      "includeCommitHistory": true,
+      "includeRecentDiffs": true,
+      "includeReleaseNotes": false,
+      "includeGithubIssues": true,
+      "commitHistoryLimit": 10,
+      "diffHistoryLimit": 5,
+      "releaseNotesLimit": 3,
+      "githubIssuesLimit": 20,
+      "sendit": false,
+      "maxRecordingTime": 300,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "review": {
+      "includeCommitHistory": true,
+      "includeRecentDiffs": true,
+      "includeReleaseNotes": false,
+      "includeGithubIssues": true,
+      "commitHistoryLimit": 10,
+      "diffHistoryLimit": 5,
+      "releaseNotesLimit": 3,
+      "githubIssuesLimit": 20,
+      "sendit": false,
+      "openaiReasoning": "low",
+      "openaiMaxOutputTokens": 10000
+    },
+    "publish": {
+      "mergeMethod": "merge",
+      "from": "main",
+      "targetVersion": "patch",
+      "interactive": false,
+      "requiredEnvVars": [
+        "GITHUB_TOKEN",
+        "OPENAI_API_KEY"
+      ],
+      "linkWorkspacePackages": true,
+      "unlinkWorkspacePackages": true,
+      "sendit": false,
+      "targetBranch": "main",
+      "noMilestones": false,
+      "checksTimeout": 3600000,
+      "releaseWorkflowsTimeout": 900000,
+      "dependencyUpdatePatterns": [
+        "@fjell/*"
+      ],
+      "waitForReleaseWorkflows": true
+    },
+    "link": {
+      "scopeRoots": {
+        "@fjell": "../../getfjell/"
+      },
+      "dryRun": false,
+      "externals": []
+    },
+    "unlink": {
+      "scopeRoots": {},
+      "dryRun": false,
+      "cleanNodeModules": false,
+      "externals": []
+    },
+    "tree": {
+      "exclude": [
+        "migration",
+        "status"
+      ],
+      "builtInCommand": "publish",
+      "continue": false,
+      "cleanNodeModules": false,
+      "externals": [],
+      "parallel": true,
+      "maxConcurrency": 8
+    },
+    "development": {
+      "targetVersion": "patch",
+      "noMilestones": false
+    },
+    "versions": {},
+    "updates": {},
+    "excludedPatterns": [
+      "node_modules",
+      "package-lock.json",
+      "yarn.lock",
+      "bun.lockb",
+      "composer.lock",
+      "Cargo.lock",
+      "Gemfile.lock",
+      "dist",
+      "build",
+      "out",
+      ".next",
+      ".nuxt",
+      "coverage",
+      ".vscode",
+      ".idea",
+      ".DS_Store",
+      ".git",
+      ".gitignore",
+      "logs",
+      "tmp",
+      ".cache",
+      "*.log",
+      ".env",
+      ".env.*",
+      "*.pem",
+      "*.crt",
+      "*.key",
+      "*.sqlite",
+      "*.db",
+      "*.zip",
+      "*.tar",
+      "*.gz",
+      "*.exe",
+      "*.bin"
+    ],
+    "branches": {
+      "working": {
+        "targetBranch": "main",
+        "developmentBranch": true,
+        "version": {
+          "type": "prerelease",
+          "increment": true,
+          "incrementLevel": "patch",
+          "tag": "dev"
+        }
+      },
+      "main": {
+        "version": {
+          "type": "release"
+        }
+      }
+    }
+  },
+  "publishedVersions": [],
+  "completedPackages": [],
+  "buildOrder": [
+    "@fjell/common-config",
+    "@fjell/logging",
+    "@fjell/core",
+    "@fjell/http-api",
+    "@fjell/registry",
+    "@fjell/client-api",
+    "@fjell/cache",
+    "@fjell/docs-template",
+    "@fjell/lib",
+    "@fjell/express-router",
+    "@fjell/lib-firestore",
+    "@fjell/lib-fs",
+    "@fjell/lib-gcs",
+    "@fjell/lib-sequelize",
+    "@fjell/providers",
+    "@fjell/sample-app"
+  ],
+  "startTime": "2025-12-12T07:30:58.923Z",
+  "lastUpdateTime": "2025-12-12T07:30:58.923Z"
+}
